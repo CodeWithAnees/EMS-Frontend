@@ -1,0 +1,22 @@
+<div>
+    <app-employee-sidebar></app-employee-sidebar>
+    <div class="relative md:ml-52 bg-blueGray-200 h-full min-h-screen">
+        <div
+            class="w-full h-44 relative bg-blueGray-900 text-lightBlue-100 flex flex-col justify-center items-center">
+            <div class="w-full flex justify-center items-center mt-4">
+                <div class="w-28 h-w-28 mb-6 rounded-full overflow-hidden">
+                    <img src="{{ employeeDetails.photoUrl }}" />
+                </div>
+            </div>
+            <div class="w-full flex justify-evenly mt-auto mb-4">
+                <span
+                    >{{ employeeDetails.id }} - {{ employeeDetails.name }}</span
+                >
+                <span>{{ employeeDetails.designation }}</span>
+                <span>{{ employeeDetails.department }}</span>
+                <span>{{ employeeDetails.email }}</span>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

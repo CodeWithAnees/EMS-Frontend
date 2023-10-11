@@ -1,0 +1,118 @@
+<nav
+    class="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-52 z-10 py-4 px-6">
+    <div
+        class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto">
+        <!-- Brand -->
+        <a
+            [routerLink]="['/employee/dashboard']"
+            class="md:block text-center md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
+            <span class="">
+                {{ sideBarData.organizationName }}
+            </span>
+        </a>
+        <!-- User -->
+
+        <!-- Collapse -->
+        <div
+            class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded"
+            [ngClass]="collapseShow">
+            <!-- Divider -->
+            <hr class="my-4 md:min-w-full" />
+            <!-- Heading -->
+            <h6
+                class="md:min-w-full text-blueGray-500 text-xs uppercase font-bold block pt-1 pb-4 no-underline">
+                Self-Services
+            </h6>
+            <!-- Navigation -->
+
+            <ul class="md:flex-col md:min-w-full flex flex-col list-none">
+                <li class="items-start">
+                    <a
+                        [routerLink]="['/employee/profile']"
+                        class="text-xs uppercase py-3 font-bold block"
+                        routerLinkActive
+                        #employeeProfile="routerLinkActive"
+                        [ngClass]="
+                            employeeProfile.isActive
+                                ? 'text-red-600 hover:text-red-700'
+                                : 'text-blueGray-700 hover:text-blueGray-500'
+                        ">
+                        <i
+                            class="fas fa-user mr-2 text-sm w-5"
+                            [ngClass]="
+                                employeeProfile.isActive
+                                    ? 'opacity-75'
+                                    : 'text-blueGray-300'
+                            "></i>
+                        Profile
+                    </a>
+                </li>
+
+                <li class="items-start">
+                    <a
+                        [routerLink]="['/employee/team']"
+                        class="text-xs uppercase py-3 font-bold block"
+                        routerLinkActive
+                        #employeeTeam="routerLinkActive"
+                        [ngClass]="
+                            employeeTeam.isActive
+                                ? 'text-red-600 hover:text-red-700'
+                                : 'text-blueGray-700 hover:text-blueGray-500'
+                        ">
+                        <i
+                            class="fas fa-users mr-2 text-sm w-5"
+                            [ngClass]="
+                                employeeTeam.isActive
+                                    ? 'opacity-75'
+                                    : 'text-blueGray-300'
+                            "></i>
+                        Team
+                    </a>
+                </li>
+
+                <li class="items-start">
+                    <a
+                        [routerLink]="['/employee/calendar']"
+                        class="text-xs uppercase py-3 font-bold block"
+                        routerLinkActive
+                        #employeeCalendar="routerLinkActive"
+                        [ngClass]="
+                            employeeCalendar.isActive
+                                ? 'text-red-600 hover:text-red-700'
+                                : 'text-blueGray-700 hover:text-blueGray-500'
+                        ">
+                        <i
+                            class="fas fa-calendar mr-2 text-sm w-5"
+                            [ngClass]="
+                                employeeCalendar.isActive
+                                    ? 'opacity-75'
+                                    : 'text-blueGray-300'
+                            "></i>
+                        Calendar
+                    </a>
+                </li>
+                <li class="items-start">
+                    <a
+                        [routerLink]="['/employee/leaveTracker']"
+                        class="text-xs uppercase py-3 font-bold block"
+                        routerLinkActive
+                        #employeeLeaveTracker="routerLinkActive"
+                        [ngClass]="
+                            employeeLeaveTracker.isActive
+                                ? 'text-red-600 hover:text-red-700'
+                                : 'text-blueGray-700 hover:text-blueGray-500'
+                        ">
+                        <i
+                            class="fas fa-gift mr-2 text-sm w-5"
+                            [ngClass]="
+                                employeeLeaveTracker.isActive
+                                    ? 'opacity-75'
+                                    : 'text-blueGray-300'
+                            "></i>
+                        Leave Tracker
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

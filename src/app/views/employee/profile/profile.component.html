@@ -1,0 +1,386 @@
+<div class="w-full flex flex-col px-6 py-2 text-sm text-black">
+    <div class="grid grid-cols-2 gap-4">
+        <div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Basic Information</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Employee ID</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.employeeId
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >First Name</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.firstName
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Father's Name</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.fathersName
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Last Name</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.lastName
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm">Email</span>
+                        <span class="w-1/2">{{ employeeDetails.email }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Hierarchy Information</h2>
+                <hr class="h-px my-2 border-1 dark:bg-gray-700" />
+
+                <div class="flex flex-col gap-1 w-full">
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Reporting Manager</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.hierarchyInformation
+                                .reportingManager
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Personal Details</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Date of Birth</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.personalDetails.dateOfBirth
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm">Gender</span>
+                        <span class="w-1/2">{{
+                            employeeDetails.personalDetails.gender
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Marital Status</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.personalDetails.maritalStatus
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Ask me about/Expertise</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.personalDetails.expertise
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Identity Information</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >PAN Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.identityInformation.panNumber
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Aadhaar Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.identityInformation.aadharNumber
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >UAN Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.identityInformation.uanNumber
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Dependent Details</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm">Name</span>
+                        <span class="w-1/2">{{
+                            employeeDetails.dependentDetails.name
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Relationship</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.dependentDetails.relationship
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Contact number of Dependent
+                        </span>
+                        <span class="w-1/2">{{
+                            employeeDetails.dependentDetails.contactNumber
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Work Information</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Employment Type</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.employmentType
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Department</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.department
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Designation</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.designation
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Location</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.location
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Employee Status</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.employeeStatus
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Date of Joining</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.dateOfJoining
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Date of Confirmation</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.workInformation.dateOfConfirmation
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Contact Details</h2>
+                <hr class="h-px my-2 border-1 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Work Phone Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.contactDetails.workPhoneNumber
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Present Address</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.contactDetails.presentAddress
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Personal Mobile Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.contactDetails.personalMobileNumber
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Personal Email Address</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.contactDetails.personalEmailAddress
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Permanent Address</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.contactDetails.permanentAddress
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white px-6 my-4 py-4 rounded-md h-min">
+                <h2 class="font-bold">Bank Details</h2>
+                <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+                <div class="flex flex-col gap-1 w-full">
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Bank Account Holder Name</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.bankDetails.accountHolderName
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Bank Name</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.bankDetails.bankName
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Account Type</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.bankDetails.accountType
+                        }}</span>
+                    </div>
+                    <div
+                        class="w-full flex justify-between border-b border-gray-300 py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >Account Number</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.bankDetails.accountNumber
+                        }}</span>
+                    </div>
+                    <div class="w-full flex justify-between py-2 items-center">
+                        <span class="w-1/2 text-gray-600 text-sm"
+                            >IFSC Code</span
+                        >
+                        <span class="w-1/2">{{
+                            employeeDetails.bankDetails.ifscCode
+                        }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-white py-4 px-4 my-2 rounded-md">
+        <h2 class="font-bold">Education Details</h2>
+        <hr class="h-px my-2 border-1 dark:bg-gray-700" />
+        <table class="table-fixed w-full">
+            <thead>
+                <tr class="font-bold">
+                    <th class="w-[30%]">Institute Name</th>
+                    <th class="w-[10%]">Degree/Diploma</th>
+                    <th class="w-[20%]">Specialization</th>
+                    <th class="w-[12%]">Date of Completion</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let edu of employeeDetails.educationDetails">
+                <tr>
+                    <td class="text-center">{{ edu.instituteName }}</td>
+                    <td class="text-center">{{ edu.degree }}</td>
+                    <td class="text-center">{{ edu.specialization }}</td>
+                    <td class="text-center">{{ edu.dateOfCompletion }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="w-full bg-white py-4 px-4 my-2 rounded-md">
+        <h2 class="font-bold">Employment History</h2>
+        <hr class="h-px my-2 border-0 dark:bg-gray-700" />
+        <table class="table-fixed w-full">
+            <thead>
+                <tr class="font-bold">
+                    <th class="w-[25%]">Company name</th>
+                    <th class="w-[20%]">Job Title</th>
+                    <th class="w-[10%]">From Date</th>
+                    <th class="w-[10%]">To Date</th>
+                    <th class="w-[20%]">Job Description</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let eh of employeeDetails.employmentHistory">
+                <tr>
+                    <td class="text-center">{{ eh.companyName }}</td>
+                    <td class="text-center">{{ eh.jobTitle }}</td>
+                    <td class="text-center">{{ eh.dateOfJoining }}</td>
+                    <td class="text-center">{{ eh.dateOfQuitting }}</td>
+                    <td class="text-center">{{ eh.jobDescription }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
